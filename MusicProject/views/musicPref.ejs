@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include ./Shared/head.ejs %>
+    <script src="javascripts/showArtist.js"></script>
+    <script src="javascripts/valid/setPref.js"></script>
+</head>
+<body>
+<div class="container">
+    <% include ./Shared/header.ejs %>
+    <div class="row content">
+        <div class="col-sm-1 hidden-xs"></div>
+        <div class="col-sm-10 center-block text-center">
+            <h1>Set your <%= title %></h1>
+            <div class="col-sm-6">
+                <div class="tbColour2 tfBlack logInBox cardBox">
+                    <form class="form-horizontal text-justify" role="form">
+                        <div class="form-group">
+                            <div class="text-left">Who are the most favourite artist</div>
+                            <input type="text" id="bestArtist" class="form-control" placeholder="Most favourite artist">
+                        </div>
+                        <div class="form-group">
+                            <div class="text-left">Next one</div>
+                            <input type="text" id="artist2" class="form-control" placeholder="Another favourite artist">
+                        </div>
+                        <div class="form-group">
+                            <div class="text-left">Next one</div>
+                            <input type="text" id="artist3" class="form-control" placeholder="Another favourite artist">
+                        </div>
+                        <div class="form-group">
+                            <div class="text-left">Next one</div>
+                            <input type="text" id="artist4" class="form-control" placeholder="Another favourite artist">
+                        </div>
+                        <div class="form-group">
+                            <div class="text-left">Last one</div>
+                            <input type="text" id="artist5" class="form-control" placeholder="Last favourite artist">
+                        </div>
+                    </form>
+                    <div class="tfColour5">
+                        <span class="textPadding">&#9675;</span><span class="textPadding">&#9679;</span>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-default noBorder tfHover1 tbHover5"
+                           role="button" onclick="saveFavourites()">Done</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="tbColour2 tfBlack logInBox cardBox">
+                    <div data-toggle="modal" data-target="#modal1">
+                        <div id="artName" class="panel handCursor artistName verticalPadding text-center tfColour5">
+                            <span id="artNameArtist">Today's Recommend</span>
+                        </div>
+                        <img id="artPic" class="img-thumbnail handCursor" src="/images/group.png">
+                    </div>
+                    <div class="modal fade" id="modal1" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content tbColour1 tfColour5">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h3 class="modal-title"><span id="artNameModal">Best Artist Name</span></h3>
+                                </div>
+                                <div class="modal-body text-justify">
+                                    <p><span id="artDescModal">Best Artist Description</span></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1 hidden-xs"></div>
+    </div>
+    <% include ./Shared/footer.ejs %>
+</div>
+</body>
+</html>

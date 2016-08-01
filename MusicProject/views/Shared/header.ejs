@@ -1,0 +1,28 @@
+<header class="clearfix">
+    <nav class="navbar navbar-default tbColour1 noBorder">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapseArea">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+                <% include logo.ejs %>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="collapseArea">
+            <div id="navList">
+                <% if (title == "Home") { %>
+                <% include navList.ejs %>
+                <% } %>
+            </div>
+            <div id="userSign" class="btn-group navbar-right">
+                <% if (title == "Home") { %>
+                <% include signedUser.ejs %>
+                <% } else { %>
+                <% include userSign.ejs %>
+                <% } %>
+            </div>
+        </div>
+    </nav>
+</header>

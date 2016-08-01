@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include ./Shared/head.ejs %>
+    <script src="javascripts/valid/userSign.js"></script>
+</head>
+<body>
+<div class="container">
+    <% include ./Shared/header.ejs %>
+    <div class="row content">
+        <div class="col-sm-2 hidden-xs"></div>
+        <div class="col-sm-8 center-block text-center">
+            <div class="tbColour2 tfBlack logInBox cardBox">
+                <% include ./Shared/fbHeader.ejs %>
+                <form id="signUp" class="form-horizontal text-justify" role="form" method="post" action="/register">
+                    <div class="form-group">
+                        <label for="email1" class="col-sm-4">Enter your e-mail:&nbsp;</label>
+                        <div class="col-sm-8 text-left">
+                            <input type="email" class="form-control" id="email1" name="email1"
+                                   placeholder="Please enter your e-mail as loggin account">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email2" class="col-sm-4">Repeat your e-mail:&nbsp;</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="email2" name="email2"
+                                   placeholder="Please repeat your e-mail">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd1" class="col-sm-4">Enter your password:&nbsp;</label>
+                        <div class="col-sm-8">
+                            <input type="password" class="form-control" id="pwd1" name="pwd1"
+                                   placeholder="Please enter your password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd2" class="col-sm-4">Repeat your password:&nbsp;</label>
+                        <div class="col-sm-8">
+                            <input type="password" class="form-control" id="pwd2" name="pwd2"
+                                   placeholder="Please repeat your password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="nickName" class="col-sm-4">Screen name:&nbsp;</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="nickName" name="nickName"
+                                   placeholder="Choose alias for you">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn tbColour5 tfWhite" onclick="signUp()">Sign Up</button>
+                    </div>
+                </form>
+                <div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2 hidden-xs"></div>
+    </div>
+    <% include ./Shared/footer.ejs %>
+</div>
+</body>
+</html>

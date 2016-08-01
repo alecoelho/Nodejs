@@ -1,0 +1,502 @@
+/***********************************
+    Style for general tags
+***********************************/
+html body {
+    background-color: #1E7C76;
+    padding-top: 10px;
+    font-family: 'Lato', Helvetica, Arial, Tahoma, sans-serif;
+    font-size: medium;
+    color: #CCE88E;
+    z-index: 0;
+}
+
+img {
+    width: 80%
+}
+
+/***********************************
+    Misc
+***********************************/
+.textPadding {
+    padding: 0 0.2em;
+}
+
+.verticalPadding {
+    padding: 0.2em 0;
+}
+
+.verticalMargin {
+    margin: 0.2em 0;
+}
+
+.fullMargin {
+    margin: 0.2em;
+}
+
+.cardBox {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cardMargin {
+    font-weight: bold;
+    vertical-align: middle;
+    margin: 0.3em;
+    padding: 10px;
+}
+
+.divCenter {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a[role="button"] {
+    font-weight: bold;
+}
+
+.bigPane {
+    width: 100%;
+    padding: 5em 2em;
+}
+
+p.youTube {
+    position: relative;
+    padding-bottom: 60%;
+    height: 0;
+    overflow: hidden;
+}
+
+p.youTube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hrColor {
+    border-color: #1E7C76;;
+}
+
+.handCursor{
+    cursor: pointer;
+}
+/***********************************
+    Colour palette
+***********************************/
+/* Background colour*/
+.tbColour1 {
+    background-color: #CCE88E;
+}
+
+.tbColour2 {
+    background-color: #A0CD88;
+}
+
+.tbColour3 {
+    background-color: #75B282;
+}
+
+.tbColour4 {
+    background-color: #4A977C;
+}
+
+.tbColour5 {
+    background-color: #1E7C76;
+}
+
+/* Background hover colour*/
+.tbHover1 {
+    background-color: #CCE88E !important;
+}
+
+.tbHover1:hover {
+    background-color: #1E7C76 !important;
+}
+
+.tbHover5 {
+    background-color: #1E7C76 !important;
+}
+
+.tbHover5:hover {
+    background-color: #CCE88E !important;
+}
+
+.tbNoHover1 {
+    background-color: #CCE88E !important;
+}
+
+.tbNoHover1:hover {
+    background-color: #CCE88E !important;
+}
+
+.tbNoHover5 {
+    background-color: #1E7C76 !important;
+}
+
+.tbNoHover5:hover {
+    background-color: #1E7C76 !important;
+}
+
+/* Text colour */
+.tfColour1 {
+    color: #CCE88E;
+}
+
+.tfColour2 {
+    color: #A0CD88;
+}
+
+.tfColour3 {
+    color: #75B282;
+}
+
+.tfColour4 {
+    color: #4A977C;
+}
+
+.tfColour5 {
+    color: #1E7C76;
+}
+
+.tfBlack {
+    color: #333333;
+}
+
+.tfWhite {
+    color: #FFFFFF;
+}
+
+/* Text colour */
+.tfHover1 {
+    color: #CCE88E !important;
+}
+
+.tfHover1:hover {
+    color: #1E7C76 !important;
+}
+
+.tfHover2 {
+    color: #CCE88E !important;
+}
+
+.tfHover2:hover {
+    color: #A0CD88 !important;
+}
+
+.tfHover4 {
+    color: #1E7C76 !important;
+}
+
+.tfHover4:hover {
+    color: #4A977C !important;
+}
+
+.tfHover5 {
+    color: #1E7C76 !important;
+}
+
+.tfHover5:hover {
+    color: #CCE88E !important;
+}
+
+.tfNoHover1 {
+    color: #CCE88E !important;
+}
+
+.tfNoHover1:hover {
+    color: #CCE88E !important;
+}
+
+.tfNoHover5 {
+    color: #1E7C76 !important;
+}
+
+.tfNoHover5:hover {
+    color: #1E7C76 !important;
+}
+
+.tfHoverBlack {
+    color: #333333 !important;
+}
+
+.tfHoverBlack:hover {
+    color: #FFFFFF !important;
+}
+
+.tfHoverWhite {
+    color: #FFFFFF !important;
+}
+
+.tfHoverWhite:hover {
+    color: #333333 !important;
+}
+
+.tfNoHoverWhite {
+    color: #FFFFFF !important;
+}
+
+.tfNoHoverWhite:hover {
+    color: #FFFFFF !important;
+}
+
+/* No styling */
+.noBorder {
+    border-style: none;
+}
+
+.noBackColour {
+    background-color: transparent;
+}
+
+a.noDeco {
+    text-decoration: none;
+}
+
+a.noDeco:link {
+    text-decoration: none;
+}
+
+a.noDeco:visited {
+    text-decoration: none;
+}
+
+a.noDeco:hover {
+    text-decoration: none;
+}
+
+a.noDeco:active {
+    text-decoration: none;
+}
+
+/***********************************
+    Overriding Bootstrap
+***********************************/
+.navbar {
+    padding: 0.4em;
+}
+
+.navbar-brand {
+    padding: 0;
+    margin: 0 1em;
+}
+
+.navbar-right {
+    margin: 0;
+}
+
+/* icon-bar color */
+.navbar .navbar-toggle .icon-bar {
+    background-color: #1E7C76;
+}
+
+.navbar .navbar-toggle:hover > .icon-bar {
+    background-color: #CCE88E;
+}
+
+/* collapse button hover color */
+.navbar .navbar-toggle:hover {
+    background-color: #1E7C76;
+}
+
+/* collapsed hr color*/
+.navbar .in {
+    border-color: #1E7C76;;
+}
+
+.navbar-default .navbar-toggle {
+    border-style: none;
+}
+
+.collapsing ul li a:hover, .in ul li a:hover {
+    color: #CCE88E !important;
+    background-color: #1E7C76 !important;
+}
+
+/***********************************
+    Style for footer
+***********************************/
+footer {
+    clear: both;
+    margin-top: 10px;
+    font-size: 0.8em;
+    opacity: 0.5;
+}
+
+footer hr {
+    border-top: 1px solid #CCE88E;
+    margin: 0.5em 0;
+    opacity: 0.5;
+}
+
+footer .navbar {
+    padding: 0 0.3em;
+}
+
+/***********************************
+    Style for header
+***********************************/
+
+header {
+}
+
+#logo {
+    margin: 0.3em;
+}
+
+.Logo_text {
+    font-size: medium;
+    font-weight: bolder;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.Logo_img {
+    width: 20px;
+    height: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    padding: 0;
+    margin-bottom: 0.2em;
+}
+
+#LogoLower {
+    margin-top: -0.5em;
+    margin-left: 2.5em;
+}
+
+#navList {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/***********************************
+    Sign Up/In
+***********************************/
+.logInBox {
+    font-weight: bold;
+    vertical-align: middle;
+    margin: 0 1em 1em 1em;
+    padding: 30px;
+}
+
+.logInBox .form-group {
+    margin: 0.5em 0;
+    vertical-align: middle;
+}
+
+.logInBox button:hover {
+    color: #CCE88E;
+}
+
+.fbLogIn {
+    background-color: #3B5998;
+    padding: 0.1em;
+}
+
+.indicator:hover {
+    color: #333333;
+}
+
+.media {
+    width: 100%;
+    height: auto;
+}
+
+.orLine {
+    text-align: center;
+    margin-top: 0;
+    color: #3B5998;
+    padding: 0 1em;
+}
+
+.orLine hr {
+    border-top: 1px solid #3B5998;
+    margin: 0.8em auto 0 auto;
+    width: 45%;
+    opacity: 0.5;
+}
+
+.hrLeft {
+    float: left;
+}
+
+.hrRight {
+    float: right;
+}
+
+.artistPic {
+    width: 100%;
+}
+
+.artistName {
+    font-size: large;
+    font-weight: bold;
+}
+
+/***********************************
+    typeahead.js
+***********************************/
+.typeahead, .tt-query, .tt-hint {
+    font-size: small !important;
+
+    /*border: 2px solid #CCCCCC;*/
+    border-radius: 5px;
+    /*font-size: 24px;*/
+    height: 30px;
+    /*line-height: 30px;*/
+    outline: medium none;
+    padding: 8px 12px;
+    /*width: 396px;*/
+    width: 200%;
+}
+
+.typeahead {
+    /*background-color: #FFFFFF;*/
+}
+
+.typeahead:focus {
+    /*border: 2px solid #0097CF;*/
+}
+
+.tt-query {
+    /*box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;*/
+}
+
+.tt-hint {
+    color: #999999;
+    padding: 8px 11px;
+}
+
+.tt-dropdown-menu {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 0.1em;
+    padding: 0.4em 0;
+    /*width: 422px;*/
+    width: 200%;
+}
+
+.tt-suggestion {
+    /*font-size: 24px;*/
+    /*line-height: 24px;*/
+    padding: 3px 20px;
+}
+
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #1E7C76;
+    color: #CCE88E;
+}
+
+.tt-suggestion p {
+    margin: 0;
+}
+
+/***********************************
+    Carousel
+***********************************/
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+}

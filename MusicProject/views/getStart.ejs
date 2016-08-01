@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include ./Shared/head.ejs %>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC0ZdDBd-nYVMGZNn-w_ZnOoQFjfVBYdsc&sensor=false"></script>
+    <script src="javascripts/valid/getStart.js"></script>
+    <script src="javascripts/autoCountry.js"></script>
+    <script src="javascripts/googlemaps.js"></script>
+    <script src="javascripts/showCountry.js"></script>
+</head>
+<body>
+<div class="container">
+    <% include ./Shared/header.ejs %>
+    <div class="row content">
+        <div class="col-sm-1 hidden-xs"></div>
+        <div class="col-sm-10 center-block text-center">
+            <h1>Choose countries where you have been</h1>
+            <div class="col-sm-6">
+                <div class="tbColour2 tfBlack logInBox cardBox">
+                    <form class="form-horizontal text-justify" role="form">
+                        <div class="form-group">
+                            <input type="text" name="typeahead" id="homeCountry"
+                                   class="typeahead tt-query form-control" autocomplete="off" spellcheck="false"
+                                   placeholder="Home country">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="country2" class="typeahead tt-query form-control" autocomplete="off"
+                                   spellcheck="false" placeholder="Another country">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="country3" class="typeahead tt-query form-control" autocomplete="off"
+                                   placeholder="Another country">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="country4" class="typeahead tt-query form-control" autocomplete="off"
+                                   placeholder="Another country">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="country5" class="typeahead tt-query form-control" autocomplete="off"
+                                   placeholder="Last country">
+                        </div>
+                    </form>
+                    <div class="tfColour5">
+                        <span class="textPadding">&#9679;</span><span class="textPadding">&#9675;</span>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-default noBorder tfHover1 tbHover5"
+                           role="button" onclick="saveCountries()">Next</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div id="googleMap" style="width:500px;height:380px;"></div>
+            </div>
+        </div>
+        <div class="col-sm-1 hidden-xs"></div>
+    </div>
+    <% include ./Shared/footer.ejs %>
+</div>
+</body>
+</html>

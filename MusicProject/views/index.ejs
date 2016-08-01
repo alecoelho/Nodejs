@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include ./Shared/head.ejs %>
+</head>
+<body>
+<div class="container">
+    <% include ./Shared/header.ejs %>
+    <div class="row content">
+        <div class="col-sm-1 hidden-xs"></div>
+        <div class="col-sm-10 center-block text-center">
+            <h2>
+                <div class="bigPane tbNoHover1 tfNoHover5">
+                    <p>
+                        Do you want whole new playlist
+                    <h1 class="strong">for FREE?</h1>
+                    </p>
+                    <a href="/getStart" class="btn btn-default btn-lg noBorder tfHover2 tbNoHover5" role="button">Get
+                        Started</a>
+                </div>
+                <div class="bigPane tbColour4 tfNoHover1">
+                    <p>If you don't know these artists,</p>
+                    <p>
+                        <% include Shared/carousel.ejs %>
+                    </p>
+                    <p>
+                    <h1>just start</h1>
+                    </p>
+                    <a href="/getStart" class="btn btn-default btn-lg noBorder tfHover4 tbNoHover1"
+                       role="button">Now</a>
+                </div>
+                <div class="bigPane tbNoHover1 tfNoHover5">
+                    <p>
+                        Meet, your personal music curator
+                        <img src="images/globes.png">
+                    <p>We recommend songs</p>
+                    <p>that you might not listen before</p>
+                    <p>from the other side of the Globe</p>
+                    </p>
+                    <a href="/getStart" class="btn btn-default btn-lg noBorder tfHover2 tbNoHover5" role="button">Let's
+                        do it</a>
+                </div>
+            </h2>
+        </div>
+        <div class="col-sm-1 hidden-xs"></div>
+    </div>
+    <% include ./Shared/footer.ejs %>
+</div>
+</body>
+</html>

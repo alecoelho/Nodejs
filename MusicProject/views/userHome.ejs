@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include ./Shared/head.ejs %>
+    <script src="javascripts/valid/loadCredentials.js"></script>
+</head>
+<body onload="loadForm()">
+<div class="container">
+    <% include ./Shared/header.ejs %>
+    <div class="row content">
+        <div class="col-sm-2 hidden-xs"></div>
+        <div class="col-sm-8 center-block">
+            <h1>Welcome <label id="username"></label></h1>
+            <% include ./Shared/artists.ejs %>
+        </div>
+        <div class="col-sm-2 hidden-xs"></div>
+    </div>
+    <% include ./Shared/footer.ejs %>
+</div>
+</body>
+</html>
